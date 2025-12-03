@@ -1,4 +1,3 @@
-import Logo from "../assets/logo-light.jpeg"
 import { Link } from 'react-router'
 
 function Navbar() {
@@ -11,6 +10,7 @@ function Navbar() {
             <Link to={'/'}>Home</Link>
             <Link to={'/blogs'}>Blogs</Link>
             <Link to={'/donate'}>Donate</Link>
+            <Link to={'/profile'}>Profile</Link>
         </div>
     </div>
   )
