@@ -1,6 +1,5 @@
-
-
-
+import Input from "../../../components/Input";
+import Select, { type SelectOptionType } from "../../../components/Select";
 
 function BlogList() {
   const selectedTag = "tech"
@@ -11,6 +10,24 @@ function BlogList() {
     "data structures",
     "maps",
     "trees"
+  ]
+  const sortByOptions: SelectOptionType[] = [
+    {
+      label: "Latest",
+      value: "LATEST"
+    },
+    {
+      label: "Oldest",
+      value: "OLDEST"
+    },
+    {
+      label: "Most Viewed",
+      value: "MOST_VIEWED"
+    },
+    {
+      label: "Most Liked",
+      value: "MOST_LIKED"
+    }
   ]
   const blogs = [
     {
@@ -48,7 +65,7 @@ function BlogList() {
   return (
     <div className="w-full flex flex-row mt-12 space-x-4">
       <div className="w-1/6 flex flex-col space-y-4">
-        <input placeholder="Search Tags..." className="text-md px-4 py-2 border" />
+        <Input placeholder="Search tags..."/>
         <div className="w-full">
           {
             tags.map((value, index) => {
@@ -79,17 +96,22 @@ function BlogList() {
             <div className="text-gray-600">3 December 2025</div>
           </div>
         </div>
-        
+
         <div className="w-full mt-6 flex flex-col space-y-4">
           <div>
             <div>All Blogs</div>
-            <input placeholder="Search Blogs..." className="text-md px-4 py-2 border w-full" />
+            <div className="flex flex-row space-x-4 w-full">
+              <Input placeholder="Search blogs..."/>
+              <div className="w-1/6">
+                <Select placeholder="Sort by" options={sortByOptions} selectedValue="" />
+              </div>
+            </div>
           </div>
-          
+
           <div className="grid grid-cols-3 gap-4">
             {
               blogs.map((data, index) => {
-                return <div key={index} className="flex flex-col border p-4 space-y-2">
+                return <div key={index} className="flex flex-col border p-4 space-y-2 cursor-pointer">
                   <div className="max-h-[250px]">
                     <img src={data.imgURL} className="grayscale object-contain h-full w-full" />
                   </div>
