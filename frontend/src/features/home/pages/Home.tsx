@@ -1,3 +1,5 @@
+import { HomeDummyData } from "../data/HomeData"
+
 function Home() {
   return (
     <div className='min-h-screen overflow-hidden h-screen flex flex-col justify-center'>
@@ -12,17 +14,17 @@ function Home() {
         </div>
         <div className="grid grid-cols-3 gap-3 items-stretch justify-center lg:w-2/5 w-full h-full">
           <div className="flex flex-col justify-center items-center h-full bg-black text-white">
-            <div className='text-3xl'>12</div>
+            <div className='text-3xl'>{HomeDummyData.blogsCount}</div>
             <div>Blogs</div>
           </div>
 
           <div className="flex flex-col justify-center items-center h-full border">
-            <div className='text-3xl'>2300</div>
+            <div className='text-3xl'>{HomeDummyData.viewsCount}</div>
             <div>Views</div>
           </div>
 
           <div className="flex flex-col justify-center items-center h-full bg-black text-white">
-            <div className='text-3xl'>12</div>
+            <div className='text-3xl'>{HomeDummyData.likesCount}</div>
             <div>Likes</div>
           </div>
         </div>
