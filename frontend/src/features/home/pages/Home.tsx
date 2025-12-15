@@ -1,3 +1,4 @@
+import Button from "../../../components/Button"
 import { HomeDummyData } from "../data/HomeData"
 
 function Home() {
@@ -8,9 +9,7 @@ function Home() {
           <div className='text-5xl '>Building  systems & <br />
             understanding how they work</div>
           <div className='font-code text-lg'>A space where I share what I build, break, and learn along the way.</div>
-          <div className='p-4 bg-black text-white rounded-full w-fit cursor-pointer'>
-            Start reading
-          </div>
+          <Button placeholder="Start reading" width="fit"/>
         </div>
         <div className="grid grid-cols-3 gap-3 items-stretch justify-center lg:w-2/5 w-full h-full">
           <div className="flex flex-col justify-center items-center h-full bg-black text-white">
