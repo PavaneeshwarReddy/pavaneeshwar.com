@@ -10,10 +10,10 @@ export const ProfileDummyData: PortfolioType = {
         designation: "Developer & Explorer",
         bio: `I’m getting tired of working on large projects where the internal logic is hidden like a black box—where all we do is run their CLI tools or call APIs as wrappers. Lately, I’ve been more interested in picking up big open-source projects and trying to build similar systems myself. It helps me understand how well-structured code is written and how things truly work behind the scenes. I want to build things from the ground up, brick by brick. Sure, it takes more time, but learning how a complete system is designed is just as important as knowing how to use it. Right now, I just want to build, break, and learn.`,
         socialMedia: [
-            { label: "Instagram", link: "https://www.instagram.com" },
+            { label: "Instagram", link: "https://www.instagram.com/pavaneeshwar.dev/" },
             { label: "Twitter", link: "https://www.twitter.com" },
-            { label: "Github", link: "https://www.github.com" },
-            { label: "Linkedin", link: "https://www.linkedin.com" }
+            { label: "Github", link: "https://github.com/PavaneeshwarReddy" },
+            { label: "Linkedin", link: "https://www.linkedin.com/in/pavaneeshwarreddy/" }
         ]
     },
 
@@ -87,6 +87,46 @@ export const ProfileDummyData: PortfolioType = {
                     "Handled major version upgrades for various open-source tools used across multiple internal teams.",
                     "Developed an algorithm to analyze Macro economical price trends across Russia, the US, and Japan, detecting outliers and reducing false market alerts by 34%.",
                 ]
+            },
+            {
+                designation: "Software Development Engineer Intern",
+                company: "Zenoti",
+                startDate: "Dec 2023",
+                endDate: "Jan 2024",
+                currentlyWorkingHere: false,
+
+                technologies: [
+                    ".net",
+                    "ReactJs",
+                    "MySQL"
+                ],
+
+                works: [
+                    "Automated the customer onboarding process, reducing onboarding time from 2 hours to 45 minutes",
+                    "Resolved race conditions in multi-client booking scenarios by ensuring safe access to shared resources such as time slots, services, and doctors",
+                    "Implemented configurable email notification workflows for administrators to manage festive season sales and promotional campaigns"
+                ]
+            },
+            {
+                designation: "Flutter Developer Intern",
+                company: "Mittarv",
+                startDate: "Jan 2023",
+                endDate: "Mar 2023",
+                currentlyWorkingHere: false,
+
+                technologies: [
+                    "Flutter",
+                    "Dart",
+                    "MongoDB",
+                    "NodeJs"
+                ],
+
+                works: [
+                    "Refactored the entire UI by standardizing reusable common components across the application",
+                    "Implemented centralized theme management supporting system themes (light, dark) and user-defined custom colors",
+                    "Integrated secure authentication mechanisms including OTP-based login and OAuth"
+                ]
+
             }
         ]
     }
